@@ -43,7 +43,7 @@ public class Menu {
             option2 = input.nextInt();
             switch (option2) {
                 case 1:
-                    System.out.printf("Balance: %d\n", account.getBalance());
+                    System.out.printf("Balance: %d\n", account.returnBalance());
                     break;
                 case 2:
                     System.out.println("You have successfully logged out!\n");
