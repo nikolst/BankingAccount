@@ -89,15 +89,18 @@ public class Account {
         System.out.println(createCardNum());
         System.out.println("Your card PIN:");
         System.out.println(createPin());
+        AccountsDatabase accountsDatabase = new AccountsDatabase();
+        accountsDatabase.insertDataIntoTable(getCardNum(), getPinCode(), 0);
     }
 
     public void logInto() {
         Menu m = new Menu();
+        AccountsDatabase accountsDatabase = new AccountsDatabase();
         System.out.println("Enter your card number:");
         String inputCardNum = input.nextLine();
         System.out.println("Enter your PIN:");
         String inputPinCode = input.nextLine();
-        if (getCardNum().equals(inputCardNum) && getPinCode().equals(inputPinCode)) {
+        if (accountsDatabase.isAccountExisting(inputCardNum, inputPinCode)) {
             System.out.println("\nYou have successfully logged in!\n");
             m.loggedInMenuSwitch();
         } else {
