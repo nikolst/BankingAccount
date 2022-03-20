@@ -28,7 +28,9 @@ When the program starts, on the console you can see the main menu with three opt
 
 If the first option is being choosed ("Create an account"), the program generate a new card number, using the Luhn algorithm, and a pin code of four digits in the range 0000 - 9999. 
 
-If the choosed option is "Log into account", the program ask the user to enter their information (card number and pin code). The program save all generated data in a database. If the program was stopped and runned again, it still has all information about the previous generated accounts. 
+If the choosed option is "Log into account", the program ask the user to enter their information (card number and pin code). The program save all generated data in a database. If the program was stopped and runned again, it still has all information about the previous generated accounts. So, when the user enter his information, the program checks for a match in the database.
+
+<img src="https://github.com/nikolst/BankingAccount/blob/main/Screenshot%202022-03-20%20at%2021.06.32.png" width="500" height="150">
 
 After all information if entered correctly, the user see another menu:
 
