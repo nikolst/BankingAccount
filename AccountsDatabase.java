@@ -5,7 +5,7 @@ import java.sql.*;
 public class AccountsDatabase {
     Account account = new Account();
 
-    private final String URL = "jdbc:sqlite:/users/nikolnalbantova/Documents/Programming/NewJava/dbs/";
+    private final String URL = "jdbc:sqlite:PATH_TO_FILE";
     private final String FILE_NAME = "/users.db";
     private final String CREATE_TABLE = "CREATE TABLE IF NOT EXISTS users (" +
             "id INTEGER PRIMARY KEY, " +
